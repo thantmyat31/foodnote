@@ -162,6 +162,7 @@
 
 .recipe .recipe-article h2 {
 	padding:60px 40px;
+	text-transform:capitalize;
 }
 
 .recipe .recipe-article .author {
@@ -242,7 +243,8 @@
 /*CATEGORY END*/
 
 /*SINGLE START*/
-.single .cat-title {
+.single .cat-title,
+.all-recipe .cat-title {
 	background: #f47c48;
     font-size: 0.8em;
     padding: 15px;
@@ -252,14 +254,58 @@
     margin-bottom: 50px;
 }
 
-.single .cat-title a {
+.single .cat-title a,
+.all-recipe .cat-title a {
 	color:#ffffff;
 }
 
-.single .cat-title a:hover {
+.single .cat-title a:hover,
+.all-recipe .cat-title a:hover {
 	color:#fcded1;
 }
 /*SINGLE END*/
+
+
+/*ALL RECIPES START*/
+.all-recipe .card {
+	overflow:hidden;
+	border-radius:0;
+	margin-bottom:30px;
+	border:none;
+	background:#fafafa;
+}
+
+.all-recipe .card img {
+	border-radius:0;
+	transition:0.3s;
+	opacity:0.8;
+}
+.all-recipe .card img:hover {
+	opacity:1;
+}
+
+.all-recipe .card h4 {
+	font-size:1.2em;
+	transition:0.3s;
+}
+
+.all-recipe .card h4:hover {
+	color:#f47c48;
+}
+
+.all-recipe .card ul li {
+	background:#f7f1ee;
+	border:none;
+}
+
+.all-recipe .card ul li {
+	color:#888888;
+}
+
+.all-recipe .card ul li span.float-right {
+	color:#ff0000;
+}
+/*ALL RECIPES END*/
 
 
 /*FOOTER START*/
